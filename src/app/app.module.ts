@@ -1,12 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {FormsModule} from '@angular/forms';
+import {HttpModule} from '@angular/http';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import Layout from './layout';
 import {CoreModule} from './core/core.module';
-import { CustomerComponent } from './routes/customer/customer.component';
+import {CustomerComponent} from './routes/customer/customer.component';
+
 
 
 @NgModule({
@@ -24,4 +26,5 @@ import { CustomerComponent } from './routes/customer/customer.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
